@@ -1,0 +1,44 @@
+<h1>Update User</h1>
+<form method="post">
+
+    <table class="User">
+        <tr>
+            <td><label for="">name</label></td>
+            <td><input type="text" name="name" [(ngModel)]="user.name"></td>
+        </tr>
+        <tr>
+            <td><label for="">surname</label></td>
+            <td><input type="text" name="surname" [(ngModel)]="user.surname"></td>
+        </tr>
+        <tr>
+            <td><label for="">pincode</label></td>
+            <td><input type="text" name="pincode" [(ngModel)]="user.pincode"></td>
+        </tr>
+        <tr>
+            <td><label for="">doj</label></td>
+            <td><input type="text" name="doj" [(ngModel)]="user.doj"></td>
+        </tr>
+        <tr>
+            <td><label for="">dob</label></td>
+            <td><input type="text" name="dob" [(ngModel)]="user.dob"></td>
+        </tr>
+        <tr>
+            <td><label for="">email</label></td>
+            <td><input type="text" name="email" [(ngModel)]="user.email"></td>
+        </tr>
+        <tr>
+            <td><label for="">password</label></td>
+            <td><input type="text" name="password" [(ngModel)]="user.password"></td>
+        </tr>
+        <tr>
+            <td><label for="">phoneno</label></td>
+            <td><input type="text" name="phoneno" [(ngModel)]="user.phoneno"></td>
+        </tr>
+        <tr>
+            <td><label for="">active</label></td>
+            <td><input type="text" name="active" [(ngModel)]="user.active"></td>
+    </table>
+
+    <button (click)="updateUser(user.id)">update</button>
+
+</form>

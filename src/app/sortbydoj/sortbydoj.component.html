@@ -1,0 +1,39 @@
+<div class="ShowUser">
+    <h1>User details</h1>
+    <table class="User">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>SURNAME</th>
+                <th>PINCODE</th>
+                <th>DOJ</th>
+                <TH>EMAIL</TH>
+                <TH>PASSWORD</TH>
+                <TH>PHONE</TH>
+                <TH>ACTIVE</TH>
+                <th>DOB</th>
+                <th>edit</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of user;let i = index">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.surname}}</td>
+                <td>{{user.pincode}}</td>
+                <td>{{user.doj}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.phoneno}}</td>
+                <td>{{user.active}}</td>
+                <td>{{user.dob}}</td>
+                <td><a  [routerLink]="['/edit',user.name]">edit</a></td>
+                <td><button (click)="deleteUser(user.id,i)">delete</button></td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+

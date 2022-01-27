@@ -1,0 +1,51 @@
+.Form{
+    border: black solid 3px;
+  
+  
+}
+
+.User {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 3%;
+  }
+  
+  .User td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+ 
+  
+  .User th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+   
+  }
+
+  .User td{
+      text-transform: uppercase;
+      background-color: honeydew;
+  }
+
+  h1{
+      font-size: 50px;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: red 10px 10px 10px;
+    
+    }
+
+    button{
+        font-size: 20px;
+        background-color: black;
+        margin-left: 50%;
+
+        color: white;
+        
+    }
